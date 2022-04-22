@@ -224,6 +224,10 @@ footer div {
     text-align: center;
 }
 
+footer div:nth-of-type(1) {
+    visibility: visible;
+}
+
 footer div:nth-of-type(1) p {
     font-size: 1.4rem;
     line-height: 30px;
@@ -249,7 +253,6 @@ form input[type="email"] {
     padding: 0.8rem;
     border: none;
     box-shadow: 1px 2px 2px #dddddd;
-    visibility: visible;
 }
 
 form input[type="email"]:hover {

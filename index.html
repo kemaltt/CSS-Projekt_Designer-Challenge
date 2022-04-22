@@ -170,16 +170,16 @@
     </main>
 
     <footer>
-        <div>
+        <div id="visible">
             <h2>Do you like this challenge? </h2>
             <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+            <form action="" onsubmit="return false">
+                <input type="email" name="email" id="input-email" placeholder="Write your email here" required>
+
+                <input type="submit" value="subscribe" onclick="subscribeModal()">
+            </form>
 
         </div>
-        <form action="" onsubmit="return false">
-            <input type="email" name="email" id="input-email" placeholder="Write your email here" required>
-
-            <input type="submit" value="subscribe" onclick="subscribeModal()">
-        </form>
 
         <div id="hidden-modal">
             <p>🥳</p>
