@@ -21,15 +21,29 @@ h2 {
     font-weight: 500;
 }
 
+p {
+    color: 0b0c17;
+}
+
 
 /* =========================================
                     Header
 ===========================================*/
 
 header {
-    background: url("../img/ilustracion_people.png") right center/ 50% 70% no-repeat, url("../img/ilustracion1.png") right top/50% 80% no-repeat;
+    background: url("../img/ilustracion1.png") right top/50% 80% no-repeat;
     padding: 3vh 4% 0 5%;
     height: 100vh;
+}
+
+header section {
+    display: flex;
+}
+
+header section div:nth-of-type(2) img {
+    position: relative;
+    animation: mymove 7s infinite;
+    width: 40vw;
 }
 
 header nav {
@@ -43,7 +57,7 @@ nav img {
 }
 
 .header-main {
-    margin: 35vh 45% 0 5%;
+    margin: 35vh 10% 0 5%;
 }
 
 .header-main p {
@@ -311,4 +325,22 @@ footer div:nth-of-type(2) input {
 
 footer div:nth-of-type(2) input:hover {
     background-color: #ff3571;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 100px;
+    }
+    50% {
+        top: 100px;
+    }
+    75% {
+        top: 100px;
+    }
+    100% {
+        top: 0px;
+    }
 }
