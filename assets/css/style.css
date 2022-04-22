@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* 
+Font: Roboto
+font-family: 'Roboto', sans-serif;
+Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+
+/* =========================================
+                    Header
+===========================================*/
+
+header {
+    background: url("../img/ilustracion_people.png") right center/ 50% 70% no-repeat, url("../img/ilustracion1.png") right top/50% 80% no-repeat;
+    padding: 3vh 4% 0 5%;
+    height: 100vh;
+}
+
+header nav {
+    display: flex;
+}
+
+nav img {
+    width: 3vw;
+    position: fixed;
+    left: 20px;
+}
+
+.header-main {
+    margin: 35vh 45% 0 5%;
+}
+
+.header-main p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    line-height: 30px;
+    color: 0b0c17;
+}
+
+.header-main img {
+    width: 30px;
+}
+
+.header-main p:nth-of-type(2) {
+    color: #ff3571;
+    font-size: 1rem;
+    margin-top: 18vh;
+    font-weight: 500;
+}
+
+
+/* ========================================
+                  Main
+===========================================*/
+
+
+/* =====================
+sectionOne
+====================== */
+
+.sectionOne {
+    margin-top: 10vh;
+}
+
+.sectionOne img {
+    /* background: url("../img/images.jpg") center/cover no-repeat; */
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* =====================
+sectionTwo
+====================== */
+
+main section:nth-of-type(2),
+main section:nth-of-type(3),
+main section:nth-of-type(4) {
+    margin: 17vh 4% 17vh 9%;
+}
+
+.sectionTwo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20vh;
+}
+
+.sectionTwo-headline {
+    width: 40%;
+}
+
+.sectionTwo-headline img {
+    width: 60px;
+}
+
+.sectionTwo-description {
+    width: 60%;
+    padding: 0 10% 0 1%;
+    line-height: 28px;
+    font-size: 1.1rem;
+}
+
+
+/* =====================
+sectionThree
+====================== */
+
+.sectionThree-titleOne,
+.sectionThree-titleTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+main section:nth-of-type(3) h4,
+main section:nth-of-type(4) h4 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.sectionThree-headline {
+    margin-left: 2%;
+}
+
+main section:nth-of-type(3) p {
+    /* margin: 1vh 35% 0 0; */
+    padding: 1vh 20% 0 0;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+.sectionThree-title {
+    display: flex;
+    width: 50%;
+}
+
+.sectionThree-img img {
+    width: 30px;
+    margin-right: 1rem;
+}
+
+
+/* =====================
+sectionFour
+====================== */
+
+.sectionFour-main div img {
+    width: 35px;
+}
+
+.sectionFour-main img {
+    width: 35vw;
+}
+
+.sectionFour-headlineOne {
+    text-align: center;
+}
+
+.sectionFour-headlineOne p {
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 10vh 20% 10vh 20%;
+}
+
+.sectionFour-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh 0;
+}
+
+.sectionFour-main div {
+    padding-right: 15%;
+}
+
+.sectionFour-main:nth-of-type(even) div {
+    margin-left: 15%;
+}
+
+.sectionFour-main h4 {
+    margin: 3vh 0 3vh 0;
+}
+
+.sectionFour-main p:nth-of-type(1) {
+    color: #dddddd;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 6vh;
+}
+
+.sectionFour-main p:nth-of-type(2) {
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+
+/* ========================================
+                Footer
+===========================================*/
+
+footer {
+    padding: 5vh 4% 2vh 4%;
+}
+
+footer form,
+footer div {
+    text-align: center;
+}
+
+footer div:nth-of-type(1) p {
+    font-size: 1.4rem;
+    line-height: 30px;
+    padding: 10vh 10%;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+footer img {
+    width: 20px;
+}
+
+footer>p {
+    padding-top: 1vh;
+}
+
+form input[type="email"] {
+    display: block;
+    margin: 0 auto;
+    width: 35vw;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.8rem;
+    border: none;
+    box-shadow: 1px 2px 2px #dddddd;
+    visibility: visible;
+}
+
+form input[type="email"]:hover {
+    box-shadow: 3px 4px 2px #dddddd;
+}
+
+form input[ type="submit"] {
+    width: 15vw;
+    margin-top: 4vh;
+    padding: 0.5rem;
+    color: #FFF;
+    background-color: #ff3571;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+form input[ type="submit"]:hover {
+    background-color: #3C30FF;
+}
+
+footer div:nth-of-type(2) {
+    position: relative;
+    left: 20vw;
+    bottom: 22vh;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50vw;
+    height: 40vh;
+    visibility: hidden;
+}
+
+footer div:nth-of-type(2) h4 {
+    font-size: 1.2rem;
+    margin-top: 1.5vh;
+}
+
+footer div:nth-of-type(2) p:nth-of-type(2) {
+    color: #ff3571;
+}
+
+footer div:nth-of-type(2) p:nth-of-type(3) {
+    margin: 3vh 0;
+}
+
+footer div:nth-of-type(2) input {
+    padding: 0.6rem;
+    background-color: #3C30FF;
+    color: #FFF;
+    border: none;
+    border-radius: 10px;
+}
+
+footer div:nth-of-type(2) input:hover {
+    background-color: #ff3571;
+}
